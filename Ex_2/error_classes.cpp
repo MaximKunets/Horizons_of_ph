@@ -196,5 +196,9 @@ int main()
         cout << x.perr();
         return 1;
     }
+    catch (bad_alloc y) {
+        cout << "Memory isn’t allocated ";
+        return 1;
+    }
     return 0;
 }
