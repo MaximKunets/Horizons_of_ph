@@ -48,7 +48,7 @@ public:
 
 class TVD: public damp_TVD {
 public:
-    TVD(int p_N, int p_T, string type) : damp_TVD(p_N, p_T) { //  type может принимать значения "1" или "exp". проверку на дурака (что может быть введено другое) не делал
+    TVD(int p_N, int p_T, string type) : damp_TVD(p_N, p_T) { //  type может принимать значения "1" или "exp"
         for (int i = -N / 2;i < N / 2;++i) {
             if (i * h < -3 || i * h > 3) {
                 init.push_back(0);
